@@ -1,0 +1,181 @@
+1. Nhóm xác thực tài khoản (Rất quan trọng)
+
+Đây là module mọi hệ thống đều có, dễ demo automation.
+
+Chức năng nên test
+Đăng ký tài khoản
+Đăng nhập / đăng xuất
+Đổi mật khẩu
+
+Test case tiêu biểu
+
+Happy case
+Đăng ký tài khoản hợp lệ
+Đăng nhập đúng email + password
+
+Negative case
+Email sai định dạng
+Password sai
+Đăng nhập khi tài khoản bị khóa
+
+Automation có thể test
+Form validation
+Redirect sau login
+Hiển thị thông báo lỗi
+
+2. Nhóm mua sắm dược phẩm (Core của hệ thống)
+
+Đây là luồng nghiệp vụ quan trọng nhất của e-commerce.
+
+Chức năng nên test
+
+Xem danh mục sản phẩm
+Xem chi tiết sản phẩm
+Tìm kiếm sản phẩm
+Thêm vào giỏ hàng
+Cập nhật số lượng
+Xóa sản phẩm khỏi giỏ
+
+Test case
+
+Happy case
+Thêm sản phẩm vào giỏ thành công
+Cập nhật số lượng giỏ hàng
+
+Negative case
+Thêm sản phẩm khi hết hàng
+Nhập số lượng âm / 0
+
+3. Luồng nghiệp vụ đặt hàng (Business Flow quan trọng)
+
+Đây là luồng end-to-end rất tốt để demo automation.
+
+Luồng test
+
+Đăng nhập
+→ chọn sản phẩm
+→ thêm vào giỏ
+→ tạo đơn hàng
+→ xác nhận đơn
+
+Chức năng test
+
+Tạo đơn hàng
+Áp dụng mã giảm giá
+Xem trạng thái đơn
+
+Negative case
+
+Đặt hàng khi giỏ trống
+Mã giảm giá không hợp lệ
+
+4. Nhóm đặt lịch khám bệnh (Điểm đặc biệt của hệ thống)
+
+Phần này giúp đề tài của bạn khác với e-commerce bình thường.
+
+Chức năng nên test
+
+Tìm bác sĩ theo chuyên khoa
+Xem lịch làm việc
+Đặt lịch khám
+Hủy lịch
+
+Test case
+
+Happy case
+Đặt lịch khám thành công
+
+Negative case
+Đặt lịch trùng thời gian
+Đặt lịch khi chưa đăng nhập
+
+5. Admin quản lý cơ bản
+
+Chỉ cần test CRUD đơn giản.
+
+Chức năng nên test
+
+Admin đăng nhập
+Thêm sản phẩm
+Sửa sản phẩm
+Xóa sản phẩm
+
+Automation test
+
+CRUD product
+Form validation
+
+6. Tổng hợp các chức năng nên test trong đề tài
+
+Bạn có thể ghi trong đề tài như sau:
+
+Các chức năng kiểm thử chính
+
+Quản lý tài khoản
+Đăng ký
+Đăng nhập / đăng xuất
+Đổi mật khẩu
+
+Thương mại điện tử
+Xem sản phẩm
+Tìm kiếm sản phẩm
+Quản lý giỏ hàng
+Đặt hàng
+
+Đặt lịch khám bệnh
+Tìm bác sĩ
+Xem lịch làm việc
+Đặt lịch khám
+Hủy lịch
+
+Quản trị hệ thống
+Quản lý sản phẩm (CRUD)
+
+7. Các loại test case nên xây dựng
+
+Happy case
+Đăng nhập thành công
+Đặt hàng thành công
+Đặt lịch khám thành công
+
+Negative case
+Email sai định dạng
+Giỏ hàng trống khi đặt hàng
+Đặt lịch trùng thời gian
+
+Form validation
+Thiếu dữ liệu
+Dữ liệu sai định dạng
+
+8. Số lượng test case hợp lý cho khóa luận
+
+Bạn chỉ cần khoảng
+
+15–25 test case automation là rất đẹp
+
+Ví dụ
+
+Login: 5 case
+Cart: 5 case
+Order: 5 case
+Booking: 5 case
+Admin CRUD: 5 case
+
+9. Gợi ý cấu trúc automation
+
+Test framework
+
+Selenium WebDriver
+TestNG
+Java
+Maven
+
+CI/CD
+
+GitHub Actions
+
+Pipeline
+
+Push code
+→ run automation test
+→ generate report
